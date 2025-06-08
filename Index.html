@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css">
+    <!-- <link rel="stylesheet" href="utility.css"> -->
 </head>
 
 <body>
-    <div id="aboutme" style="position: relative; ">
+    <div id="aboutme" class="main" style="position: relative; ">
         <header>
             <nav>
                 <h1>SOURABH portfolio</h1>
-                <ul>
-                    <li><a href="#aboutme">About me</a></li>
-                    <li><a href="#skills">Skills & Tools</a></li>
-                    <!-- <li><a href="#">Experience</a></li> -->
+                <div class="hamburger" id="hamburger" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#aboutme">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">contact</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    
+
         <section class="hero">
             <div class="hero-text">
                 <h2>Hello, I'm SOURABH,</h2>
                 <h3><span class="gradient-text">Web Designer</span></h3>
                 <p>
-                    I'm a UI/UX and Frontend Developer passionate about crafting user-friendly and visually appealing web
-                    experiences. This portfolio website, which I designed and developed myself using Figma, HTML, CSS, and
+                    I'm a UI/UX and Frontend Developer passionate about crafting user-friendly and visually appealing
+                    web
+                    experiences. This portfolio website, which I designed and developed myself using Figma, HTML, CSS,
+                    and
                     JavaScript, showcases my skills and projects.
                 </p>
                 <a href="#" class="btn">Download CV</a>
@@ -38,119 +46,139 @@
             <div class="hero-img">
                 <img src="required_images/imageforportfolio-removebg-preview.png" alt="" />
             </div>
-            
+
         </section>
-        
-    </div>
 
 
-    <!-- skills -->
-
-    <div id="skills" class="skills">
-        <h2>skills & Tools</h2>
 
 
-        <div class="skillbox">
-            <div class="box">
-                <h3>Programming Language</h3>
-                <div>
-                    <div class="one"> <img src="/All required images in png/html5-icon-13.jpg">
-                        <p style="text-align: center;"> HTML</p>
+        <!-- skills -->
+
+        <div id="skills" class="skills">
+            <h2>skills & Tools</h2>
+
+
+            <div class="skillbox">
+                <div class="box">
+                    <h3>Programming Language</h3>
+                    <div>
+                        <div class="one"> <img src="/All required images in png/html5-icon-13.jpg">
+                            <p style="text-align: center;"> HTML</p>
+                        </div>
+                        <div class="one"> <img src="/All required images in png/css_logo.png">
+                            <p style="text-align: center;"> CSS</p>
+                        </div>
+                        <div class="one"> <img src="/MYPORTFOLIO/required_images/javascript_logo.png">
+                            <p style="text-align: center;"> JAVASCRIPT</p>
+                        </div>
                     </div>
-                    <div class="one"> <img src="/All required images in png/css_logo.png">
-                        <p style="text-align: center;"> CSS</p>
-                    </div>
-                    <div class="one"> <img src="/MYPORTFOLIO/required_images/javascript_logo.png">
-                        <p style="text-align: center;"> JAVASCRIPT</p>
+                </div>
+                <div class="box">
+                    <h3>Tools & Technologies</h3>
+                    <div>
+                        <div class="one"><img src="/All required images in png/Github-Logo-Transparent.png">
+                            <p style="text-align: center;">GITHUB</p>
+                        </div>
+                        <div class="one"><img src="/All required images in png/Figma-Logo-Transparent.png">
+                            <p style="text-align: center;">FIGMA</p>
+                        </div>
+                        <div class="one"><img src="/All required images in png/visual-studio-code.png">
+                            <p style="text-align: center;">VS CODE</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <h3>Tools & Technologies</h3>
-                <div>
-                    <div class="one"><img src="/All required images in png/Github-Logo-Transparent.png">
-                        <p style="text-align: center;">GITHUB</p>
+
+
+            <h2 class="softskills">
+                Soft skills
+            </h2>
+            <div class="softboxes">
+                <div class="first">
+                    <div class="time">
+                        <div class="cirlce"></div>
+                        <p>Time Management</p>
                     </div>
-                    <div class="one"><img src="/All required images in png/Figma-Logo-Transparent.png">
-                        <p style="text-align: center;">FIGMA</p>
+                    <div class="problem">
+                        <div class="cirlce prob"></div>
+                        <p>Problem Solving & Debugging</p>
                     </div>
-                    <div class="one"><img src="/All required images in png/visual-studio-code.png">
-                        <p style="text-align: center;">VS CODE</p>
+                </div>
+                <div class="second">
+                    <div class="alig">
+                        <div class="cirlce"></div>
+                        <p>Alig Teamwork</p>
+                    </div>
+                    <div class="communication">
+                        <div class="cirlce  prob"></div>
+                        <p>Collaborative & Communication</p>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <h2 class="softskills">
-            Soft skills
-        </h2>
-        <div class="softboxes">
-            <div class="first">
-                <div class="time">
-                    <div class="cirlce"></div>
-                    <p>Time Management</p>
+        <!-- skills end -->
+
+
+        <!-- projects start -->
+        <div id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projectboxes">
+                <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (22).png" alt="">
+                    <h3>To do List</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta
+                        laborum voluptatem commodi ipsam corporis minima consequatur!</p>
+                    <div><a href="/cards/To do list/index.html" target="_blank"><button>Live Preview</button></a><a
+                            href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div>
                 </div>
-                <div class="problem">
-                    <div class="cirlce"></div>
-                    <p>Problem Solving & Debugging</p>
+                <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (23).png" alt="">
+                    <h3>Voice to Text</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta
+                        laborum voluptatem commodi ipsam corporis minima consequatur!</p>
+                    <div><a href="/cards/voicetotext/index.html" target="_blank"><button>Live Preview</button></a><a
+                            href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div>
                 </div>
-            </div>
-            <div class="second">
-                <div class="alig">
-                    <div class="cirlce"></div>
-                    <p>Alig Teamwork</p>
+                <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (21).png" alt="">
+                    <h3>weather card</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta
+                        laborum voluptatem commodi ipsam corporis minima consequatur!</p>
+                    <div><a href="/cards/wether_card/index.html" target="_blank"><button>Live Preview</button></a><a
+                            href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div>
                 </div>
-                <div class="communication">
-                    <div class="cirlce"></div>
-                    <p>Collaborative & Communication</p>
-                </div>
+                <!-- <div class="box"></div> -->
             </div>
         </div>
-    </div>
 
 
-    <!-- skills end -->
+        <!-- projects end -->
+
+        <!-- Education start -->
+        <!-- Education end -->
 
 
-    <!-- projects start -->
-    <div id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projectboxes">
-            <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (22).png" alt=""><h3>To do List</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta laborum voluptatem commodi ipsam corporis minima consequatur!</p><div><a href="/cards/To do list/index.html" target="_blank"><button>Live Preview</button></a><a href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div></div>
-            <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (23).png" alt=""><h3>Voice to Text</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta laborum voluptatem commodi ipsam corporis minima consequatur!</p><div><a href="/cards/voicetotext/index.html" target="_blank"><button>Live Preview</button></a><a href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div></div>
-            <div class="box"><img src="/MYPORTFOLIO/required_images/Screenshot (21).png" alt=""><h3>weather card</h3><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab error magnam, repellendus soluta laborum voluptatem commodi ipsam corporis minima consequatur!</p><div><a href="/cards/wether_card/index.html" target="_blank"><button>Live Preview</button></a><a href="https://github.com/sourabh788pal"><button>Check on Github</button></a></div></div>
-            <!-- <div class="box"></div> -->
+        <!-- contact start  -->
+        <div id="contacts" class="contact">
+            <h2>Contact me</h2>
+            <p class="note">feel free to reach out me for any question and oppurtunities !</p>
+            <ul class="pageslink">
+                <li><a href=" ">About me</a></li>
+                <li><a href="">Skills and Tools</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Education</a></li>
+            </ul>
+            <ul class="socialmedia">
+                <li><a href=""><img src="/All required images in png/facebook-logo.png" alt=""></a></li>
+                <li><a href=""><img src="/All required images in png/instagram-logo-transparent-.png" alt=""></a></li>
+                <li><a href=""><img src="/All required images in png/new-twitter-logo-png.png" alt=""></a></li>
+                <li><a href=""><img src="/All required images in png/youtube-png.png" alt=""></a></li>
+            </ul>
+
+            <p class="creater" style="margin: 10px 0px; font-size: 20px;">Design and developed by Sourabh</p>
+            <p style="margin: 10px 0px; font-size: 20px;"><img src="">sourabh.All Right Are Reserved.</p>
         </div>
     </div>
-
-
-    <!-- projects end -->
-
-    <!-- Education start -->
-    <!-- Education end -->
-
-
-    <!-- contact start  -->
-    <div id="contacts" class="contact">
-        <h2>Contact me</h2>
-        <p class="note">feel free to reach out me for any question and oppurtunities !</p>
-        <ul class="pageslink">
-            <li><a href=" ">About me</a></li>
-            <li><a href="">Skills and Tools</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Education</a></li>
-        </ul>
-        <ul class="socialmedia">
-            <li><a href=""><img src="/All required images in png/facebook-logo.png" alt=""></a></li>
-            <li><a href=""><img src="/All required images in png/instagram-logo-transparent-.png" alt=""></a></li>
-            <li><a href=""><img src="/All required images in png/new-twitter-logo-png.png" alt=""></a></li>
-            <li><a href=""><img src="/All required images in png/youtube-png.png" alt=""></a></li>
-        </ul>
-
-        <p style="margin: 10px 0px; font-size: 20px;">Design and developed by Sourabh</p>
-        <p style="margin: 10px 0px; font-size: 20px;"><img src="">sourabh.All Right Are Reserved.</p>
-    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
